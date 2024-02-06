@@ -157,7 +157,7 @@ Now, `rush w` should run `libexec/rush-who`, and save you mere milliseconds of t
 
 Clone this repo:
 
-    git clone git@github.com:qrush/wromo.git [name of your wromo]
+    git clone git@github.com:qrush/wromo-master.git [name of your wromo]
     cd [name of your wromo]
     ./prepare.sh [name of your wromo]
 
@@ -168,7 +168,7 @@ The prepare script will run you through the steps for making your own wromo. Als
 So you've prepared your own wromo, now how do you use it? Here's one way you could install your wromo in your `$HOME` directory:
 
     cd
-    git clone [YOUR GIT HOST URL]/wromo.git .wromo
+    git clone [YOUR GIT HOST URL]/wromo-master.git .wromo
 
 For bash users:
 
