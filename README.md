@@ -41,7 +41,7 @@ who
 Of course, this is a simple example... but now `rush who` should work!
 
     $ rush who
-    qrush     console  Sep 14 17:15 
+    Wromo     console  Sep 14 17:15 
 
 You can run *any* executable in the `libexec` directly, as long as it follows the `NAME-WROMOCOMMAND` convention. Try out a Ruby script or your favorite language!
 
@@ -157,7 +157,7 @@ Now, `rush w` should run `libexec/rush-who`, and save you mere milliseconds of t
 
 Clone this repo:
 
-    git clone git@github.com:qrush/wromo-master.git [name of your wromo]
+    git clone git@github.com:Wromo/wromo-master.git [name of your wromo]
     cd [name of your wromo]
     ./prepare.sh [name of your wromo]
 
