@@ -4,13 +4,13 @@ Wromo is a model for setting up shell programs that use wromocommands, like `git
 
 A wromo program is run at the command line using this style:
 
-    $ [name of program] [wromocommand] [(args)]
+    [name of program] [wromocommand] [(args)]
 
 Here's some quick examples:
 
-    $ rbenv                    # prints out usage and wromocommands
-    $ rbenv versions           # runs the "versions" wromocommand
-    $ rbenv shell 1.9.3-p194   # runs the "shell" wromocommand, passing "1.9.3-p194" as an argument
+    rbenv                    # prints out usage and wromocommands
+    rbenv versions           # runs the "versions" wromocommand
+    rbenv shell 1.9.3-p194   # runs the "shell" wromocommand, passing "1.9.3-p194" as an argument
 
 Each wromocommand maps to a separate, standalone executable program. Wromo programs are laid out like so:
 
@@ -31,17 +31,20 @@ Here's an example of adding a new wromocommand. Let's say your wromo is named `r
 
 Now open up your editor, and dump in:
 
-``` bash
-#!/usr/bin/env bash
+``` bash ```
+
+!/usr/bin/env bash
 set -e
 
 who
+
+
 ```
 
 Of course, this is a simple example... but now `rush who` should work!
 
     $ rush who
-    Wromo     console  Sep 14 17:15 
+    Wromo     console  Sep 14 17:15
 
 You can run *any* executable in the `libexec` directly, as long as it follows the `NAME-WROMOCOMMAND` convention. Try out a Ruby script or your favorite language!
 
